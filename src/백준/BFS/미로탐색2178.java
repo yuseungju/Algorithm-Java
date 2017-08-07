@@ -1,7 +1,7 @@
 //문제 출처 : https://www.acmicpc.net/problem/2178
 //제목 : 미로탐색2178
 
-package BFS;
+package 백준.BFS;
 
 import java.util.LinkedList;
 import java.util.Queue;

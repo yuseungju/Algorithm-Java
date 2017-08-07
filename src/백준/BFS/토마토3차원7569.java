@@ -1,7 +1,7 @@
 //문제 출처 : https://www.acmicpc.net/problem/7569
 //제목 : 토마토7569
 
-package BFS;
+package 백준.BFS;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
