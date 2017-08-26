@@ -1,12 +1,12 @@
+package 백준.BFS;
 //문제 출처 : https://www.acmicpc.net/problem/1260
 //제목 : DFS와BFS1260
 
-package 백준.BFS;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
@@ -15,11 +15,11 @@ import java.util.Stack;
 public class DFS와BFS1260 {
 	public static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
-		//정점, 간선, 시작점 설정
 		int n = sc.nextInt();//정점수
 		int m = sc.nextInt();//간선수
 		int start = sc.nextInt();//시작
-		List<Integer> arr[] = new ArrayList[n+1];
+		
+		ArrayList<Integer> arr[] = new ArrayList[n+1];
 		int visit[];
 		for(int a=1; a< arr.length; a++)
 			arr[a] = new ArrayList<Integer>();
@@ -32,8 +32,9 @@ public class DFS와BFS1260 {
 			arr[v1].add(v2);
 			arr[v2].add(v1);
 		}
-		for(int a=1; a<=n; a++)
+		for(int a=1; a<=n; a++){
 	        Collections.sort(arr[a]);
+		}
 		
 		//2.DFS
 		Stack<Integer> st = new Stack<Integer>();
@@ -56,12 +57,12 @@ public class DFS와BFS1260 {
 				}
 			}
 		}
-		//DFS로 방문한 순서대로 출력
+		//방문 순서대로 출력
 		for(int a=0; a<bfsResult.size();a++)
 			System.out.print(bfsResult.get(a) + " ");
 		System.out.println();
 		
-		//1.BFS로 방문한 순서대로 출력
+		//1.BFS
 		Queue<Integer> que = new LinkedList<Integer>();
 		startPoint = start;
 		que.add(startPoint);

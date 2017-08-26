@@ -1,7 +1,7 @@
 //문제 출처 : https://www.acmicpc.net/problem/1874
 //제목 : 스택수열1874
 
-package 스택;
+package 백준.스택;
 
 import java.io.BufferedReader;
 import java.io.IOException;
