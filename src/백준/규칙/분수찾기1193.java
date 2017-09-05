@@ -1,5 +1,6 @@
 //문제 출처 : https://www.acmicpc.net/problem/1193
 //제목 : 분수찾기1193
+
 package 백준.규칙;
 import java.util.Scanner;
 
