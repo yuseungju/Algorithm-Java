@@ -63,9 +63,10 @@ public class 병합정렬 {
 			else
 				array[a] = arr2[arr2It++];
 		}
+		System.out.println(Arrays.toString(array));
 	}
 	public static void main(String[] args) {
-		int[] src = {5,1,5,2,3,5,8,8,-10,2,-12,10,99,16,15,13};
+		int[] src = {5, 4, 6,7 ,8 ,9, 10, 15, 17, 18, 19, 20, 11, 12, 13, 14, 16};
 		System.out.println(Arrays.toString(src));
 		mergeAsc(src, 0, src.length-1);
 		System.out.println(Arrays.toString(src));
